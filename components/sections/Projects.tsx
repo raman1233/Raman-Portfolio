@@ -25,15 +25,15 @@ export default function Projects() {
       highlight: 'Used for strategic decision making',
     },
     {
-      title: 'Business Metrics Automation System',
-      description: 'Developed automated ETL pipeline in Python for processing and analyzing business metrics. Integrated with multiple data sources and provided automated reporting.',
-      tools: ['Python', 'SQL', 'ETL', 'Automation'],
+      title: 'Ultimate Laptop Price Predictor',
+      description: 'Developed an end-to-end machine learning application to estimate laptop prices based on hardware specifications and brand features. Trained predictive regression models on historical pricing data and deployed an interactive web application for real-time user estimations..',
+      tools: ['Python', 'Machine LearningQL', 'Streamlit', 'Jupyter Notebook'],
       insights: [
-        'Automated 50+ manual reporting processes',
-        'Reduced data processing time by 80%',
-        'Eliminated data entry errors completely',
+        'Performed comprehensive data cleaning, EDA, and feature engineering in Jupyter Notebook',
+        'Trained and evaluated multiple regression algorithms to optimize prediction accuracy',
+        'Deployed a user-friendly frontend interface using Streamlit for seamless user interaction',
       ],
-      highlight: 'Improved operational efficiency',
+      highlight: '⭐ Interactive ML Web Application',
     },
   ];
 

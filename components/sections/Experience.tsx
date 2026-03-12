@@ -68,7 +68,7 @@ export default function Experience() {
           <ul className="space-y-3 text-gray-300">
             <li className="flex gap-3">
               <span className="text-cyan-400 font-bold">•</span>
-              <span>Successfully completed multiple data analysis projects as part of TCS internship program</span>
+              <span>Successfully completed multiple data analysis projects as part of Tata Group internship program</span>
             </li>
             <li className="flex gap-3">
               <span className="text-cyan-400 font-bold">•</span>
