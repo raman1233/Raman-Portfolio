@@ -33,7 +33,7 @@ export default function Projects() {
         'Trained and evaluated multiple regression algorithms to optimize prediction accuracy',
         'Deployed a user-friendly frontend interface using Streamlit for seamless user interaction',
       ],
-      highlight: '⭐ Interactive ML Web Application',
+      highlight: 'Interactive ML Web Application',
     },
   ];
 
