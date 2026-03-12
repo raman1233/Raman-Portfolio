@@ -7,7 +7,7 @@ export default function Skills() {
     },
     {
       category: 'Business Intelligence & Visualization',
-      skills: ['Power BI', 'Tableau', 'Excel', 'DAX', 'Data Modeling', 'Dashboard Design', 'Google Sheets', 'Plotly'],
+      skills: ['Power BI', 'Excel', 'DAX', 'Data Modeling', 'Dashboard Design', 'Google Sheets'],
       color: 'from-blue-500 to-purple-500',
     },
     {
