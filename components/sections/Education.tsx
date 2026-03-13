@@ -30,12 +30,38 @@ export default function Education() {
             </h3>
             <div className="space-y-3">
               {[
-                { title: 'Tata Group Data Analytics Internship', issuer: 'Tata Group', status: 'Completed' },
-                { title: 'Python for Data Analysis', issuer: 'Professional Training', status: 'Completed' },
-                { title: 'SQL Database Management', issuer: 'Professional Development', status: 'Completed' },
-                { title: 'Business Intelligence with Power BI', issuer: 'Industry Training', status: 'Completed' },
+                { 
+                  title: 'Tata Group Data Analytics Internship', 
+                  issuer: 'Tata Group', 
+                  status: 'Completed',
+                  link: 'https://drive.google.com/file/d/1KD0Yx0cJkyl9JcZhnJExcVnOiyZQRoN6/view?usp=sharing' 
+                },
+                { 
+                  title: 'Python for Data Analysis', 
+                  issuer: 'NPTEL', 
+                  status: 'Completed',
+                  link: 'https://drive.google.com/file/d/1_ClasHAFfCQtS5DgYnmbTekdivwUJ9HY/view?usp=sharing' 
+                },
+                { 
+                  title: 'SQL Database Management System', 
+                  issuer: 'NPTEL', 
+                  status: 'Completed',
+                  link: 'https://drive.google.com/file/d/17vqqmqqeeX5agBTtTL6k8T_apqsqW3Ze/view?usp=sharing' 
+                },
+                { 
+                  title: 'Business Intelligence with Power BI', 
+                  issuer: 'Industry Training', 
+                  status: 'Completed',
+                  link: 'https://drive.google.com/file/d/1Ne-zFhiJf2JoS21GqLpXmXuMbWrLdF5E/view?usp=drive_link' 
+                },
               ].map((cert, idx) => (
-                <div key={idx} className="bg-gradient-to-br from-slate-800/80 to-slate-800/40 rounded-lg p-4 border border-slate-700 hover:border-cyan-500/50 transition-colors">
+                <a 
+                  key={idx} 
+                  href={cert.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block bg-gradient-to-br from-slate-800/80 to-slate-800/40 rounded-lg p-4 border border-slate-700 hover:border-cyan-500/50 transition-all hover:shadow-md hover:shadow-cyan-500/20 cursor-pointer"
+                >
                   <div className="flex items-start justify-between">
                     <div>
                       <h4 className="font-semibold text-white text-sm">{cert.title}</h4>
@@ -45,7 +71,7 @@ export default function Education() {
                       ✓ {cert.status}
                     </span>
                   </div>
-                </div>
+                </a>
               ))}
             </div>
           </div>

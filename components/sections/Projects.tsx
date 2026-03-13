@@ -12,6 +12,7 @@ export default function Projects() {
         'Enabled 30% improvement in sales strategy',
       ],
       highlight: 'Shows Dashboard Presentation Skills',
+      link: 'https://github.com/raman1233/ower-BI-project-a-comprehensive-Smart-Supply-Chain-Analysis-dashboard-', 
     },
     {
       title: 'Customer Data Analysis & Segmentation',
@@ -23,17 +24,19 @@ export default function Projects() {
         'Improved customer retention by 25%',
       ],
       highlight: 'Used for strategic decision making',
+      link: 'https://github.com/raman1233/SQL-PYTHON-Project', 
     },
     {
       title: 'Ultimate Laptop Price Predictor',
-      description: 'Developed an end-to-end machine learning application to estimate laptop prices based on hardware specifications and brand features. Trained predictive regression models on historical pricing data and deployed an interactive web application for real-time user estimations..',
-      tools: ['Python', 'Machine LearningQL', 'Streamlit', 'Jupyter Notebook'],
+      description: 'Developed an end-to-end machine learning application to estimate laptop prices based on hardware specifications and brand features. Trained predictive regression models on historical pricing data and deployed an interactive web application for real-time user estimations.',
+      tools: ['Python', 'Machine Learning', 'Streamlit', 'Jupyter Notebook'],
       insights: [
         'Performed comprehensive data cleaning, EDA, and feature engineering in Jupyter Notebook',
         'Trained and evaluated multiple regression algorithms to optimize prediction accuracy',
         'Deployed a user-friendly frontend interface using Streamlit for seamless user interaction',
       ],
       highlight: 'Interactive ML Web Application',
+      link: 'https://github.com/raman1233/Ultimate-Laptop-price-predictor', 
     },
   ];
 
@@ -46,9 +49,12 @@ export default function Projects() {
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project, idx) => (
-            <div
+            <a
               key={idx}
-              className="group relative bg-gradient-to-br from-slate-800/80 to-slate-800/40 rounded-xl overflow-hidden border border-slate-700 hover:border-cyan-500/50 transition-all hover:shadow-2xl hover:shadow-cyan-500/10"
+              href={project.link}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group relative block bg-gradient-to-br from-slate-800/80 to-slate-800/40 rounded-xl overflow-hidden border border-slate-700 hover:border-cyan-500/50 transition-all hover:shadow-2xl hover:shadow-cyan-500/10 cursor-pointer"
             >
               {/* Card Background Gradient on Hover */}
               <div className="absolute inset-0 bg-gradient-to-br from-cyan-500/5 to-blue-500/5 opacity-0 group-hover:opacity-100 transition-opacity" />
@@ -99,7 +105,7 @@ export default function Projects() {
                   ))}
                 </div>
               </div>
-            </div>
+            </a>
           ))}
         </div>
 

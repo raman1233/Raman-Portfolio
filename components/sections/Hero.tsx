@@ -54,7 +54,7 @@ export default function Hero() {
           <div className="flex justify-center">
             <div className="relative w-64 h-80 rounded-2xl overflow-hidden shadow-2xl ring-1 ring-cyan-500/20">
               <Image
-                src="/profile.jpg"
+                src="raman_portfolio_photo.png"
                 alt="Raman Gulhane"
                 fill
                 className="object-cover"
